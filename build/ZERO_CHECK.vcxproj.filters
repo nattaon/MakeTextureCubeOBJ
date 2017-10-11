@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\7858d45c17df4ae43d189a68ff8ec1b5\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{FD053E21-FFDE-3957-B062-00920A415455}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

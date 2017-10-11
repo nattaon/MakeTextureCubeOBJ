@@ -1,0 +1,3 @@
+C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/MakeTextureCubeOBJ.dir
+C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/ZERO_CHECK.dir

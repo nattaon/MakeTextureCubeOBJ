@@ -1,0 +1,4 @@
+-DWIN32
+-o
+C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/moc_mainwindow.cpp
+C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/mainwindow.h

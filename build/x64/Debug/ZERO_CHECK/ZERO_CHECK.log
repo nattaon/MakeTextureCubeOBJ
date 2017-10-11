@@ -1,0 +1,10 @@
+﻿Build started 10/11/2017 2:17:03 PM.
+     1>Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\ZERO_CHECK.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Checking Build System
+         CMake does not need to re-run because C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/generate.stamp is up-to-date.
+     1>Done Building Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\ZERO_CHECK.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.60
