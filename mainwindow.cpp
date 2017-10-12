@@ -261,7 +261,7 @@ void MainWindow::ButtonPerspectiveTransformPressed()
 
 	imshow("Target Image", target_img);
 
-	H.release();
+	//H.release();
 	//source_transform.release();
 	//transformed_gray.release();
 	//transformed_gray_inv.release();
@@ -314,6 +314,7 @@ void MainWindow::PressedCombineTexturePNG()
 	{
 		QMessageBox::information(0, QString("PressedCombineTexturePNG()"), QString("No texture files"), QMessageBox::Ok);
 		return;
+
 	}
 
 	//qDebug() << ui->textEdit->textureList.count();
@@ -369,7 +370,7 @@ void MainWindow::PressedCombineTexturePNG()
 	roi_y2 = roi_y1 + roi_h;
 	texture_imgroi = Mat(texture_img, Rect(roi_x1, roi_y1, roi_w, roi_h));
 	texture1_front.copyTo(texture_imgroi);
-	texture_imgroi.release();
+	//texture_imgroi.release();
 	t1_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y1 / tex_h));
 	t1_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y2 / tex_h));
 	t1_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y2 / tex_h));
@@ -385,7 +386,7 @@ void MainWindow::PressedCombineTexturePNG()
 	roi_y2 = roi_y1 + roi_h;
 	texture_imgroi = Mat(texture_img, Rect(roi_x1, roi_y1, roi_w, roi_h));
 	texture2_back.copyTo(texture_imgroi);
-	texture_imgroi.release();
+	//texture_imgroi.release();
 	t2_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y1 / tex_h));
 	t2_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y2 / tex_h));
 	t2_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y2 / tex_h));
@@ -399,7 +400,7 @@ void MainWindow::PressedCombineTexturePNG()
 	roi_y2 = roi_y1 + roi_h;
 	texture_imgroi = Mat(texture_img, Rect(roi_x1, roi_y1, roi_w, roi_h));
 	texture3_left.copyTo(texture_imgroi);
-	texture_imgroi.release();
+	//texture_imgroi.release();
 	t3_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y1 / tex_h));
 	t3_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y2 / tex_h));
 	t3_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y2 / tex_h));
@@ -413,7 +414,7 @@ void MainWindow::PressedCombineTexturePNG()
 	roi_y2 = roi_y1 + roi_h;
 	texture_imgroi = Mat(texture_img, Rect(roi_x1, roi_y1, roi_w, roi_h));
 	texture4_right.copyTo(texture_imgroi);
-	texture_imgroi.release();
+	//texture_imgroi.release();
 	t4_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y1 / tex_h));
 	t4_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y2 / tex_h));
 	t4_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y2 / tex_h));
@@ -427,7 +428,7 @@ void MainWindow::PressedCombineTexturePNG()
 	roi_y2 = roi_y1 + roi_h;
 	texture_imgroi = Mat(texture_img, Rect(roi_x1, roi_y1, roi_w, roi_h));
 	texture5_top.copyTo(texture_imgroi);
-	texture_imgroi.release();
+	//texture_imgroi.release();
 	t5_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y1 / tex_h));
 	t5_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y2 / tex_h));
 	t5_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y2 / tex_h));
@@ -441,7 +442,7 @@ void MainWindow::PressedCombineTexturePNG()
 	roi_y2 = roi_y1 + roi_h;
 	texture_imgroi = Mat(texture_img, Rect(roi_x1, roi_y1, roi_w, roi_h));
 	texture6_bottom.copyTo(texture_imgroi);
-	texture_imgroi.release();
+	//texture_imgroi.release();
 	t6_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y1 / tex_h));
 	t6_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y2 / tex_h));
 	t6_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y2 / tex_h));
@@ -475,8 +476,9 @@ void MainWindow::PressedCreateOBJ_MTL()
 	}
 	if (t1_pos.size() != 4)
 	{
-		QMessageBox::information(0, QString("PressedCreateOBJ_MTL()"), QString("No texture data"), QMessageBox::Ok);
-		return;
+		//QMessageBox::information(0, QString("PressedCreateOBJ_MTL()"), QString("No texture data"), QMessageBox::Ok);
+		//return;
+		//PressedCombineTexturePNG();
 	}
 
 	QString objname = texturename + ".obj";

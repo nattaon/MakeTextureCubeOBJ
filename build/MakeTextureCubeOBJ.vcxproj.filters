@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\fileedit.cpp">
@@ -37,6 +37,9 @@
     <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_RgbImage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_SharedHeader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_writeobjmtl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -55,6 +58,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\RgbImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\SharedHeader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\writeobjmtl.h">
@@ -80,6 +86,9 @@
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\a961297c703be61b7c9824f3b1bceef2\moc_RgbImage.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\a961297c703be61b7c9824f3b1bceef2\moc_SharedHeader.cpp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\a961297c703be61b7c9824f3b1bceef2\moc_writeobjmtl.cpp.rule">

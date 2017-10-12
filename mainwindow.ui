@@ -501,7 +501,7 @@
      <string>7.Create obj and mtl</string>
     </property>
    </widget>
-   <widget class="FileEdit" name="in_obj_name">
+   <widget class="QLineEdit" name="in_obj_name">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -511,7 +511,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>texture</string>
+     <string>obj_</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btn_show_obj">
@@ -560,14 +560,14 @@ p, li { white-space: pre-wrap; }
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>FileEdit</class>
-   <extends>QLineEdit</extends>
-   <header location="global">fileedit.h</header>
-  </customwidget>
-  <customwidget>
    <class>FileEditMultiple</class>
    <extends>QTextEdit</extends>
    <header>fileeditmultiple.h</header>
+  </customwidget>
+  <customwidget>
+   <class>FileEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">fileedit.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

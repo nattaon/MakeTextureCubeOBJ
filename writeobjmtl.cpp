@@ -11,6 +11,11 @@ void WriteOBJMTL::WriteOBJFile(string objname, string mtlname, float w_cm, float
 	std::vector<cv::Point2f> t3, std::vector<cv::Point2f> t4,
 	std::vector<cv::Point2f> t5, std::vector<cv::Point2f> t6)
 {
+	w_cm = w_cm * 0.5;
+	h_cm = h_cm * 0.5;
+	d_cm = d_cm * 0.5;
+
+
 	ofstream outfile;
 	outfile.open(objname);
 

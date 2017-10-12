@@ -10,7 +10,7 @@ Microsoft (R) Build Engine version 12.0.31101.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 10/11/2017 2:15:14 PM.
+Build started 10/12/2017 11:30:18 AM.
 Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\3.5.1\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
@@ -36,7 +36,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.68
+Time Elapsed 00:00:01.81
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -56,7 +56,7 @@ Microsoft (R) Build Engine version 12.0.31101.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 10/11/2017 2:15:15 PM.
+Build started 10/12/2017 11:30:21 AM.
 Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\3.5.1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
@@ -82,7 +82,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.57
+Time Elapsed 00:00:01.23
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -94,157 +94,157 @@ The CXX compiler identification is MSVC, found in "C:/Users/nattaon2/Desktop/Mak
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_acb32.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_ecb0a.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
 Microsoft (R) Build Engine version 12.0.31101.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 10/11/2017 2:15:16 PM.
-Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_acb32.vcxproj" on node 1 (default targets).
+Build started 10/12/2017 11:30:22 AM.
+Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_ecb0a.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_acb32.dir\Debug\".
+  Creating directory "cmTC_ecb0a.dir\Debug\".
   Creating directory "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_acb32.dir\Debug\cmTC_acb32.tlog\".
+  Creating directory "cmTC_ecb0a.dir\Debug\cmTC_ecb0a.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_acb32.dir\Debug\cmTC_acb32.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_ecb0a.dir\Debug\cmTC_ecb0a.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_acb32.dir\Debug\\" /Fd"cmTC_acb32.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_ecb0a.dir\Debug\\" /Fd"cmTC_ecb0a.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\testCCompiler.c
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_acb32.dir\Debug\\" /Fd"cmTC_acb32.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\testCCompiler.c
-  
   testCCompiler.c
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_ecb0a.dir\Debug\\" /Fd"cmTC_ecb0a.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_acb32.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_acb32.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_acb32.lib" /MACHINE:X64  /machine:x64 cmTC_acb32.dir\Debug\testCCompiler.obj
-  cmTC_acb32.vcxproj -> C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_acb32.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_ecb0a.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_ecb0a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_ecb0a.lib" /MACHINE:X64  /machine:x64 cmTC_ecb0a.dir\Debug\testCCompiler.obj
+  cmTC_ecb0a.vcxproj -> C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_ecb0a.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_acb32.dir\Debug\cmTC_acb32.tlog\unsuccessfulbuild".
-  Touching "cmTC_acb32.dir\Debug\cmTC_acb32.tlog\cmTC_acb32.lastbuildstate".
-Done Building Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_acb32.vcxproj" (default targets).
+  Deleting file "cmTC_ecb0a.dir\Debug\cmTC_ecb0a.tlog\unsuccessfulbuild".
+  Touching "cmTC_ecb0a.dir\Debug\cmTC_ecb0a.tlog\cmTC_ecb0a.lastbuildstate".
+Done Building Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_ecb0a.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.76
+Time Elapsed 00:00:01.21
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_43ecc.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_cff14.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
 Microsoft (R) Build Engine version 12.0.31101.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 10/11/2017 2:15:17 PM.
-Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_43ecc.vcxproj" on node 1 (default targets).
+Build started 10/12/2017 11:30:24 AM.
+Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_cff14.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_43ecc.dir\Debug\".
+  Creating directory "cmTC_cff14.dir\Debug\".
   Creating directory "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_43ecc.dir\Debug\cmTC_43ecc.tlog\".
+  Creating directory "cmTC_cff14.dir\Debug\cmTC_cff14.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_43ecc.dir\Debug\cmTC_43ecc.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_cff14.dir\Debug\cmTC_cff14.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_43ecc.dir\Debug\\" /Fd"cmTC_43ecc.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_cff14.dir\Debug\\" /Fd"cmTC_cff14.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_43ecc.dir\Debug\\" /Fd"cmTC_43ecc.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
-  
   CMakeCCompilerABI.c
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_cff14.dir\Debug\\" /Fd"cmTC_cff14.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
+  
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_43ecc.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_43ecc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_43ecc.lib" /MACHINE:X64  /machine:x64 cmTC_43ecc.dir\Debug\CMakeCCompilerABI.obj
-  cmTC_43ecc.vcxproj -> C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_43ecc.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_cff14.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_cff14.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_cff14.lib" /MACHINE:X64  /machine:x64 cmTC_cff14.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_cff14.vcxproj -> C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_cff14.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_43ecc.dir\Debug\cmTC_43ecc.tlog\unsuccessfulbuild".
-  Touching "cmTC_43ecc.dir\Debug\cmTC_43ecc.tlog\cmTC_43ecc.lastbuildstate".
-Done Building Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_43ecc.vcxproj" (default targets).
+  Deleting file "cmTC_cff14.dir\Debug\cmTC_cff14.tlog\unsuccessfulbuild".
+  Touching "cmTC_cff14.dir\Debug\cmTC_cff14.tlog\cmTC_cff14.lastbuildstate".
+Done Building Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_cff14.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.72
+Time Elapsed 00:00:01.21
 
 
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_f5eac.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_c4886.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
 Microsoft (R) Build Engine version 12.0.31101.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 10/11/2017 2:15:18 PM.
-Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_f5eac.vcxproj" on node 1 (default targets).
+Build started 10/12/2017 11:30:26 AM.
+Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_c4886.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_f5eac.dir\Debug\".
+  Creating directory "cmTC_c4886.dir\Debug\".
   Creating directory "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_f5eac.dir\Debug\cmTC_f5eac.tlog\".
+  Creating directory "cmTC_c4886.dir\Debug\cmTC_c4886.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_f5eac.dir\Debug\cmTC_f5eac.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_c4886.dir\Debug\cmTC_c4886.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_f5eac.dir\Debug\\" /Fd"cmTC_f5eac.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_c4886.dir\Debug\\" /Fd"cmTC_c4886.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_f5eac.dir\Debug\\" /Fd"cmTC_f5eac.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
-  
   testCXXCompiler.cxx
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_c4886.dir\Debug\\" /Fd"cmTC_c4886.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_f5eac.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_f5eac.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_f5eac.lib" /MACHINE:X64  /machine:x64 cmTC_f5eac.dir\Debug\testCXXCompiler.obj
-  cmTC_f5eac.vcxproj -> C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_f5eac.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_c4886.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_c4886.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_c4886.lib" /MACHINE:X64  /machine:x64 cmTC_c4886.dir\Debug\testCXXCompiler.obj
+  cmTC_c4886.vcxproj -> C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_c4886.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_f5eac.dir\Debug\cmTC_f5eac.tlog\unsuccessfulbuild".
-  Touching "cmTC_f5eac.dir\Debug\cmTC_f5eac.tlog\cmTC_f5eac.lastbuildstate".
-Done Building Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_f5eac.vcxproj" (default targets).
+  Deleting file "cmTC_c4886.dir\Debug\cmTC_c4886.tlog\unsuccessfulbuild".
+  Touching "cmTC_c4886.dir\Debug\cmTC_c4886.tlog\cmTC_c4886.lastbuildstate".
+Done Building Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_c4886.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.65
+Time Elapsed 00:00:01.19
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_82f2c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_3bfb1.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
 Microsoft (R) Build Engine version 12.0.31101.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 10/11/2017 2:15:19 PM.
-Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_82f2c.vcxproj" on node 1 (default targets).
+Build started 10/12/2017 11:30:27 AM.
+Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_3bfb1.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_82f2c.dir\Debug\".
+  Creating directory "cmTC_3bfb1.dir\Debug\".
   Creating directory "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_82f2c.dir\Debug\cmTC_82f2c.tlog\".
+  Creating directory "cmTC_3bfb1.dir\Debug\cmTC_3bfb1.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_82f2c.dir\Debug\cmTC_82f2c.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_3bfb1.dir\Debug\cmTC_3bfb1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_82f2c.dir\Debug\\" /Fd"cmTC_82f2c.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_3bfb1.dir\Debug\\" /Fd"cmTC_3bfb1.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_82f2c.dir\Debug\\" /Fd"cmTC_82f2c.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
-  
   CMakeCXXCompilerABI.cpp
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_3bfb1.dir\Debug\\" /Fd"cmTC_3bfb1.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
+  
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_82f2c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_82f2c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_82f2c.lib" /MACHINE:X64  /machine:x64 cmTC_82f2c.dir\Debug\CMakeCXXCompilerABI.obj
-  cmTC_82f2c.vcxproj -> C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_82f2c.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_3bfb1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_3bfb1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_3bfb1.lib" /MACHINE:X64  /machine:x64 cmTC_3bfb1.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_3bfb1.vcxproj -> C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_3bfb1.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_82f2c.dir\Debug\cmTC_82f2c.tlog\unsuccessfulbuild".
-  Touching "cmTC_82f2c.dir\Debug\cmTC_82f2c.tlog\cmTC_82f2c.lastbuildstate".
-Done Building Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_82f2c.vcxproj" (default targets).
+  Deleting file "cmTC_3bfb1.dir\Debug\cmTC_3bfb1.tlog\unsuccessfulbuild".
+  Touching "cmTC_3bfb1.dir\Debug\cmTC_3bfb1.tlog\cmTC_3bfb1.lastbuildstate".
+Done Building Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_3bfb1.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.60
+Time Elapsed 00:00:01.12
 
 
 
@@ -252,40 +252,40 @@ Time Elapsed 00:00:00.60
 Detecting CXX [] compiler features compiled with the following output:
 Change Dir: C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_32154.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_81985.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
 Microsoft (R) Build Engine version 12.0.31101.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 10/11/2017 2:15:20 PM.
-Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_32154.vcxproj" on node 1 (default targets).
+Build started 10/12/2017 11:30:29 AM.
+Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_81985.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_32154.dir\Debug\".
+  Creating directory "cmTC_81985.dir\Debug\".
   Creating directory "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_32154.dir\Debug\cmTC_32154.tlog\".
+  Creating directory "cmTC_81985.dir\Debug\cmTC_81985.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_32154.dir\Debug\cmTC_32154.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_81985.dir\Debug\cmTC_81985.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_32154.dir\Debug\\" /Fd"cmTC_32154.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\feature_tests.cxx
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_81985.dir\Debug\\" /Fd"cmTC_81985.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\feature_tests.cxx
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_32154.dir\Debug\\" /Fd"cmTC_32154.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\feature_tests.cxx
-  
   feature_tests.cxx
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_81985.dir\Debug\\" /Fd"cmTC_81985.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\feature_tests.cxx
+  
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_32154.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_32154.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_32154.lib" /MACHINE:X64  /machine:x64 cmTC_32154.dir\Debug\feature_tests.obj
-  cmTC_32154.vcxproj -> C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_32154.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_81985.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_81985.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/CMakeTmp/Debug/cmTC_81985.lib" /MACHINE:X64  /machine:x64 cmTC_81985.dir\Debug\feature_tests.obj
+  cmTC_81985.vcxproj -> C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\Debug\cmTC_81985.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_32154.dir\Debug\cmTC_32154.tlog\unsuccessfulbuild".
-  Touching "cmTC_32154.dir\Debug\cmTC_32154.tlog\cmTC_32154.lastbuildstate".
-Done Building Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_32154.vcxproj" (default targets).
+  Deleting file "cmTC_81985.dir\Debug\cmTC_81985.tlog\unsuccessfulbuild".
+  Touching "cmTC_81985.dir\Debug\cmTC_81985.tlog\cmTC_81985.lastbuildstate".
+Done Building Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\CMakeTmp\cmTC_81985.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.64
+Time Elapsed 00:00:01.14
 
 
     Feature record: CXX_FEATURE:1cxx_alias_templates

@@ -61,7 +61,7 @@ public:
     QLabel *label_3;
     QPushButton *btn_combine_png;
     QPushButton *btn_create_obj;
-    FileEdit *in_obj_name;
+    QLineEdit *in_obj_name;
     QPushButton *btn_show_obj;
     FileEditMultiple *textEdit;
 
@@ -194,7 +194,7 @@ public:
         btn_create_obj = new QPushButton(centralWidget);
         btn_create_obj->setObjectName(QStringLiteral("btn_create_obj"));
         btn_create_obj->setGeometry(QRect(350, 300, 131, 41));
-        in_obj_name = new FileEdit(centralWidget);
+        in_obj_name = new QLineEdit(centralWidget);
         in_obj_name->setObjectName(QStringLiteral("in_obj_name"));
         in_obj_name->setGeometry(QRect(10, 310, 141, 22));
         btn_show_obj = new QPushButton(centralWidget);
@@ -243,7 +243,7 @@ public:
         label_3->setText(QApplication::translate("MainWindow", " (U direction)", 0));
         btn_combine_png->setText(QApplication::translate("MainWindow", "6.Combine to Texture (png)", 0));
         btn_create_obj->setText(QApplication::translate("MainWindow", "7.Create obj and mtl", 0));
-        in_obj_name->setText(QApplication::translate("MainWindow", "texture", 0));
+        in_obj_name->setText(QApplication::translate("MainWindow", "obj_", 0));
         btn_show_obj->setText(QApplication::translate("MainWindow", "Show 6 faces object", 0));
         textEdit->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
