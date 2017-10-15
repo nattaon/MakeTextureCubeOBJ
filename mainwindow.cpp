@@ -190,8 +190,26 @@ void MainWindow::ButtonNewImagePressed()
 
 void MainWindow::ButtonSaveImagePressed()
 {
-	QString filename = GetSaveImageFilename();
-	if (filename.trimmed().isEmpty()) return;
+	//QString filename = GetSaveImageFilename();
+	//if (filename.trimmed().isEmpty()) return;
+
+	QString texturename = ui->in_obj_name->text();
+	QString facenumber;
+
+	if      (ui->rb_1front->isChecked())  facenumber = "1";
+	else if (ui->rb_2back->isChecked())   facenumber = "2";
+	else if (ui->rb_3left->isChecked())   facenumber = "3";
+	else if (ui->rb_4right->isChecked())  facenumber = "4";
+	else if (ui->rb_5top->isChecked())    facenumber = "5";
+	else if (ui->rb_6bottom->isChecked()) facenumber = "6";
+	else
+	{
+		QMessageBox::information(0, QString("ButtonSaveImagePressed()"), QString("Face number Radio button did not check"), QMessageBox::Ok);
+		return;
+	}
+
+
+	QString filename = texturename + facenumber + ".bmp";
 
 	imwrite(filename.toStdString(), target_img);
 
