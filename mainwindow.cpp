@@ -18,6 +18,9 @@ MainWindow::MainWindow(QWidget *parent) :
 	connect(ui->btn_rot_ccw, SIGNAL(clicked()), this, SLOT(ButtonRotCCWPressed()));
 	connect(ui->btn_rot_cw, SIGNAL(clicked()), this, SLOT(ButtonRotCWPressed()));
 
+	connect(ui->btn_flip_v, SIGNAL(clicked()), this, SLOT(ButtonFlipVerticalPressed()));
+	connect(ui->btn_flip_h, SIGNAL(clicked()), this, SLOT(ButtonFlipHorizontalPressed()));
+
 	connect(ui->btn_remove_point, SIGNAL(clicked()), this, SLOT(ButtonRemovePointPressed()));
 	connect(ui->btn_clearall_point, SIGNAL(clicked()), this, SLOT(ButtonClearallPointPressed()));
 
@@ -139,6 +142,24 @@ void MainWindow::ButtonRotCWPressed()
 	finalM.copyTo(target_img);
 	imshow("Target Image", target_img);
 
+}
+
+void MainWindow::ButtonFlipVerticalPressed()
+{
+	Mat flipM;
+	flip(target_img, flipM, 0);
+
+	flipM.copyTo(target_img);
+	imshow("Target Image", target_img);
+}
+
+void MainWindow::ButtonFlipHorizontalPressed()
+{
+	Mat flipM;
+	flip(target_img, flipM, 1);
+
+	flipM.copyTo(target_img);
+	imshow("Target Image", target_img);
 }
 
 void MainWindow::ButtonNewImagePressed()

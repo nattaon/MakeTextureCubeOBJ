@@ -49,6 +49,9 @@ private:
 	void ButtonRotCCWPressed();
 	void ButtonRotCWPressed();
 
+	void ButtonFlipVerticalPressed();
+	void ButtonFlipHorizontalPressed();
+
 	void ButtonRemovePointPressed();
 	void ButtonClearallPointPressed();
 
