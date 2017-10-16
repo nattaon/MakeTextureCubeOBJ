@@ -46,7 +46,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 MainWindow::~MainWindow()
 {
-    delete ui;
+    //delete ui;
 }
 
 
@@ -334,6 +334,12 @@ void MainWindow::PressedCombineTexturePNG()
 		return;
 
 	}
+	QString texturename = ui->in_obj_name->text();
+	if (texturename == "obj_")
+	{
+		QMessageBox::information(0, QString("PressedCombineTexturePNG()"), QString("No texture name"), QMessageBox::Ok);
+		return;
+	}
 
 	//qDebug() << ui->textEdit->textureList.count();
 
@@ -468,7 +474,7 @@ void MainWindow::PressedCombineTexturePNG()
 
 	imshow("texture_img", texture_img);
 
-	QString texturename = ui->in_obj_name->text();
+
 
 	texturename.append(".png");
 	imwrite(texturename.toStdString(), texture_img);
@@ -513,6 +519,7 @@ void MainWindow::PressedCreateOBJ_MTL()
 
 	QMessageBox::information(0, QString("PressedCreateOBJ_MTL()"), QString("Finish"), QMessageBox::Ok);
 
+	ui->in_obj_name->setText("obj_");
 
 }
 

@@ -1,4 +1,4 @@
-﻿Build started 10/12/2017 12:01:34 PM.
+﻿Build started 10/16/2017 4:26:44 PM.
      1>Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\MakeTextureCubeOBJ.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:\Qt\5.5\msvc2013_64\include /IC:\Qt\5.5\msvc2013_64\include\QtWidgets /IC:\Qt\5.5\msvc2013_64\include\QtGui /IC:\Qt\5.5\msvc2013_64\include\QtCore /I"C:\Qt\5.5\msvc2013_64\.\mkspecs\win32-msvc2013" /IC:\Qt\5.5\msvc2013_64\include\QtOpenGL /IC:\opencv3.1.0\build\include /IC:\opencv3.1.0\build\include\opencv /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_OPENGL_LIB /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"MakeTextureCubeOBJ.dir\Debug\\" /Fd"MakeTextureCubeOBJ.dir\Debug\vc120.pdb" /Gd /TP /errorReport:prompt C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\mainwindow.cpp
@@ -10,18 +10,15 @@
          MakeTextureCubeOBJ.dir\Debug\glwidget.obj
          MakeTextureCubeOBJ.dir\Debug\main.obj
          MakeTextureCubeOBJ.dir\Debug\mainwindow.obj
-         MakeTextureCubeOBJ.dir\Debug\RgbImage.obj
          MakeTextureCubeOBJ.dir\Debug\writeobjmtl.obj
          MakeTextureCubeOBJ.dir\Debug\moc_fileedit.obj
          MakeTextureCubeOBJ.dir\Debug\moc_fileeditmultiple.obj
          MakeTextureCubeOBJ.dir\Debug\moc_glwidget.obj
          MakeTextureCubeOBJ.dir\Debug\moc_mainwindow.obj
-         MakeTextureCubeOBJ.dir\Debug\moc_RgbImage.obj
-         MakeTextureCubeOBJ.dir\Debug\moc_SharedHeader.obj
          MakeTextureCubeOBJ.dir\Debug\moc_writeobjmtl.obj
          MakeTextureCubeOBJ.vcxproj -> C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\Debug\MakeTextureCubeOBJ.exe
      1>Done Building Project "C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\MakeTextureCubeOBJ.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.34
+Time Elapsed 00:00:02.78

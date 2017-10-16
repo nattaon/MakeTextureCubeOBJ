@@ -64,6 +64,9 @@ public:
     QLineEdit *in_obj_name;
     QPushButton *btn_show_obj;
     FileEditMultiple *textEdit;
+    QPushButton *btn_flip_v;
+    QPushButton *btn_flip_h;
+    QLabel *label_4;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -116,7 +119,7 @@ public:
         btn_new_img->setGeometry(QRect(340, 10, 141, 41));
         btn_rot_cw = new QPushButton(centralWidget);
         btn_rot_cw->setObjectName(QStringLiteral("btn_rot_cw"));
-        btn_rot_cw->setGeometry(QRect(310, 140, 51, 28));
+        btn_rot_cw->setGeometry(QRect(300, 147, 51, 21));
         label_8 = new QLabel(centralWidget);
         label_8->setObjectName(QStringLiteral("label_8"));
         label_8->setGeometry(QRect(250, 40, 41, 20));
@@ -134,7 +137,7 @@ public:
         tree_src_point->setGeometry(QRect(10, 120, 141, 141));
         label_2 = new QLabel(centralWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(160, 140, 81, 16));
+        label_2->setGeometry(QRect(250, 130, 81, 16));
         btn_clearall_point = new QPushButton(centralWidget);
         btn_clearall_point->setObjectName(QStringLiteral("btn_clearall_point"));
         btn_clearall_point->setGeometry(QRect(90, 270, 61, 28));
@@ -171,7 +174,7 @@ public:
         rb_1front->setGeometry(QRect(160, 170, 95, 20));
         btn_rot_ccw = new QPushButton(centralWidget);
         btn_rot_ccw->setObjectName(QStringLiteral("btn_rot_ccw"));
-        btn_rot_ccw->setGeometry(QRect(250, 140, 51, 28));
+        btn_rot_ccw->setGeometry(QRect(250, 147, 51, 21));
         rb_3left = new QRadioButton(centralWidget);
         rb_3left->setObjectName(QStringLiteral("rb_3left"));
         rb_3left->setGeometry(QRect(160, 210, 95, 20));
@@ -203,6 +206,15 @@ public:
         textEdit = new FileEditMultiple(centralWidget);
         textEdit->setObjectName(QStringLiteral("textEdit"));
         textEdit->setGeometry(QRect(250, 170, 231, 121));
+        btn_flip_v = new QPushButton(centralWidget);
+        btn_flip_v->setObjectName(QStringLiteral("btn_flip_v"));
+        btn_flip_v->setGeometry(QRect(360, 147, 51, 21));
+        btn_flip_h = new QPushButton(centralWidget);
+        btn_flip_h->setObjectName(QStringLiteral("btn_flip_h"));
+        btn_flip_h->setGeometry(QRect(410, 147, 71, 21));
+        label_4 = new QLabel(centralWidget);
+        label_4->setObjectName(QStringLiteral("label_4"));
+        label_4->setGeometry(QRect(360, 130, 81, 16));
         MainWindow->setCentralWidget(centralWidget);
 
         retranslateUi(MainWindow);
@@ -256,6 +268,9 @@ public:
                         ":9pt;\">4</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">5</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">6</span></p></body></html>", 0));
+        btn_flip_v->setText(QApplication::translate("MainWindow", "vertical", 0));
+        btn_flip_h->setText(QApplication::translate("MainWindow", "horizontal", 0));
+        label_4->setText(QApplication::translate("MainWindow", "Flip", 0));
     } // retranslateUi
 
 };

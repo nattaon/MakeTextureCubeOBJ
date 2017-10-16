@@ -11,9 +11,6 @@ void WriteOBJMTL::WriteOBJFile(string objname, string mtlname, float w_cm, float
 	std::vector<cv::Point2f> t3, std::vector<cv::Point2f> t4,
 	std::vector<cv::Point2f> t5, std::vector<cv::Point2f> t6)
 {
-	w_cm = w_cm * 0.5;
-	h_cm = h_cm * 0.5;
-	d_cm = d_cm * 0.5;
 
 
 	ofstream outfile;
@@ -21,8 +18,14 @@ void WriteOBJMTL::WriteOBJFile(string objname, string mtlname, float w_cm, float
 
 	outfile << "# Blender v2.79 (sub 0) OBJ File: ''" << endl;
 	outfile << "# by mionz generator; position arrange in U direction toward normal" << endl;
+	outfile << "# " << w_cm << " " << h_cm << " " << d_cm <<endl;
 	outfile << "mtllib " << mtlname.c_str() << endl;
 	outfile << "o Cube" << endl;
+
+	w_cm = w_cm * 0.5;
+	h_cm = h_cm * 0.5;
+	d_cm = d_cm * 0.5;
+
 
 	outfile << "#1.front vertex position" << endl;
 	outfile << "v " << -w_cm << " " << h_cm << " " << d_cm << endl;

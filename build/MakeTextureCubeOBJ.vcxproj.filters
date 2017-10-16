@@ -16,9 +16,6 @@
     <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\mainwindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\RgbImage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\writeobjmtl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -32,12 +29,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_mainwindow.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_RgbImage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_SharedHeader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_writeobjmtl.cpp">
@@ -55,12 +46,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\mainwindow.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\RgbImage.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\SharedHeader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\writeobjmtl.h">
@@ -83,12 +68,6 @@
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\a961297c703be61b7c9824f3b1bceef2\moc_mainwindow.cpp.rule">
-      <Filter>CMake Rules</Filter>
-    </CustomBuild>
-    <CustomBuild Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\a961297c703be61b7c9824f3b1bceef2\moc_RgbImage.cpp.rule">
-      <Filter>CMake Rules</Filter>
-    </CustomBuild>
-    <CustomBuild Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\a961297c703be61b7c9824f3b1bceef2\moc_SharedHeader.cpp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\a961297c703be61b7c9824f3b1bceef2\moc_writeobjmtl.cpp.rule">

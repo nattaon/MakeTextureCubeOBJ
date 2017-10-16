@@ -7,7 +7,7 @@
 #include <QString>
 #include <QMouseEvent>
 #include <QKeyEvent>
-#include "RgbImage.h"
+
 
 class GLWidget : public QGLWidget
 {

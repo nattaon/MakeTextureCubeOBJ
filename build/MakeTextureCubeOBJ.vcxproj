@@ -351,82 +351,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\a961297c703be61b7c9824f3b1bceef2\moc_RgbImage.cpp.rule">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating moc_RgbImage.cpp</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build
-if %errorlevel% neq 0 goto :cmEnd
-C:
-if %errorlevel% neq 0 goto :cmEnd
-C:\Qt\5.5\msvc2013_64\bin\moc.exe @C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/moc_RgbImage.cpp_parameters
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/a961297c703be61b7c9824f3b1bceef2/moc_RgbImage.cpp.rule;C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\RgbImage.h;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_RgbImage.cpp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating moc_RgbImage.cpp</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cd C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build
-if %errorlevel% neq 0 goto :cmEnd
-C:
-if %errorlevel% neq 0 goto :cmEnd
-C:\Qt\5.5\msvc2013_64\bin\moc.exe @C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/moc_RgbImage.cpp_parameters
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/a961297c703be61b7c9824f3b1bceef2/moc_RgbImage.cpp.rule;C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\RgbImage.h;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_RgbImage.cpp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\a961297c703be61b7c9824f3b1bceef2\moc_SharedHeader.cpp.rule">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating moc_SharedHeader.cpp</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build
-if %errorlevel% neq 0 goto :cmEnd
-C:
-if %errorlevel% neq 0 goto :cmEnd
-C:\Qt\5.5\msvc2013_64\bin\moc.exe @C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/moc_SharedHeader.cpp_parameters
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/a961297c703be61b7c9824f3b1bceef2/moc_SharedHeader.cpp.rule;C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\SharedHeader.h;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_SharedHeader.cpp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating moc_SharedHeader.cpp</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cd C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build
-if %errorlevel% neq 0 goto :cmEnd
-C:
-if %errorlevel% neq 0 goto :cmEnd
-C:\Qt\5.5\msvc2013_64\bin\moc.exe @C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/moc_SharedHeader.cpp_parameters
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/nattaon2/Desktop/MakeTextureCubeOBJ/build/CMakeFiles/a961297c703be61b7c9824f3b1bceef2/moc_SharedHeader.cpp.rule;C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\SharedHeader.h;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_SharedHeader.cpp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
     <CustomBuild Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\CMakeFiles\a961297c703be61b7c9824f3b1bceef2\moc_writeobjmtl.cpp.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating moc_writeobjmtl.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
@@ -469,8 +393,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\fileeditmultiple.h" />
     <ClInclude Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\glwidget.h" />
     <ClInclude Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\mainwindow.h" />
-    <ClInclude Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\RgbImage.h" />
-    <ClInclude Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\SharedHeader.h" />
     <ClInclude Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\writeobjmtl.h" />
     <ClInclude Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\ui_mainwindow.h" />
     <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\fileedit.cpp"  />
@@ -478,14 +400,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\glwidget.cpp"  />
     <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\main.cpp"  />
     <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\mainwindow.cpp"  />
-    <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\RgbImage.cpp"  />
     <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\writeobjmtl.cpp"  />
     <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_fileedit.cpp"  />
     <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_fileeditmultiple.cpp"  />
     <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_glwidget.cpp"  />
     <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_mainwindow.cpp"  />
-    <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_RgbImage.cpp"  />
-    <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_SharedHeader.cpp"  />
     <ClCompile Include="C:\Users\nattaon2\Desktop\MakeTextureCubeOBJ\build\moc_writeobjmtl.cpp"  />
   </ItemGroup>
   <ItemGroup>

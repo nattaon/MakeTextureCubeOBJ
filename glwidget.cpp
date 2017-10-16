@@ -253,94 +253,17 @@ void GLWidget::DrawAxis(float length)
 
 void GLWidget::DrawBin()
 {
-	if (hasTexture)
+
+	glPushMatrix();
 	{
-/*
-		// Front Face
-		glBindTexture(GL_TEXTURE_2D, textures[0]);
-		glEnable(GL_TEXTURE_2D);
-		glBegin(GL_QUADS);
-		glTexCoord2f(0.0f, 0.0f); glVertex3f(-xLen, -yLen, zLen);
-		glTexCoord2f(1.0f, 0.0f); glVertex3f(xLen, -yLen, zLen);
-		glTexCoord2f(1.0f, 1.0f); glVertex3f(xLen, yLen, zLen);
-		glTexCoord2f(0.0f, 1.0f); glVertex3f(-xLen, yLen, zLen);
-		glEnd();
-		glDisable(GL_TEXTURE_2D);
+		glTranslatef(xLen / 2, yLen / 2, zLen / 2);
+		glScalef(xLen, yLen, zLen);
+		glColor3d(1.0, 1.0, 1.0);
+		glutWireCube(1.0);
+		//glutSolidCube(1.0);
 
-		
-		// Back Face
-		glBindTexture(GL_TEXTURE_2D, textures[1]);
-		glEnable(GL_TEXTURE_2D);
-		glBegin(GL_QUADS);
-		glTexCoord2f(1.0f, 0.0f); glVertex3f(-xLen, -yLen, -zLen);
-		glTexCoord2f(1.0f, 1.0f); glVertex3f(-xLen, yLen, -zLen);
-		glTexCoord2f(0.0f, 1.0f); glVertex3f(xLen, yLen, -zLen);
-		glTexCoord2f(0.0f, 0.0f); glVertex3f(xLen, -yLen, -zLen);
-		glEnd();
-		glDisable(GL_TEXTURE_2D);
-
-
-		// Top Face
-		glBindTexture(GL_TEXTURE_2D, textures[2]);
-		glEnable(GL_TEXTURE_2D);
-		glBegin(GL_QUADS);
-		glTexCoord2f(1.0f, 0.0f); glVertex3f(xLen, -yLen, -zLen);
-		glTexCoord2f(1.0f, 1.0f); glVertex3f(xLen, yLen, -zLen);
-		glTexCoord2f(0.0f, 1.0f); glVertex3f(xLen, yLen, zLen);
-		glTexCoord2f(0.0f, 0.0f); glVertex3f(xLen, -yLen, zLen);
-		glEnd();
-		glDisable(GL_TEXTURE_2D);
-
-
-		// Bottom Face
-		glBindTexture(GL_TEXTURE_2D, textures[3]);
-		glEnable(GL_TEXTURE_2D);
-		glBegin(GL_QUADS);
-		glTexCoord2f(0.0f, 0.0f); glVertex3f(-xLen, -yLen, -zLen);
-		glTexCoord2f(1.0f, 0.0f); glVertex3f(-xLen, -yLen, zLen);
-		glTexCoord2f(1.0f, 1.0f); glVertex3f(-xLen, yLen, zLen);
-		glTexCoord2f(0.0f, 1.0f); glVertex3f(-xLen, yLen, -zLen);
-		glEnd();
-		glDisable(GL_TEXTURE_2D);
-
-		// Right face
-		glBindTexture(GL_TEXTURE_2D, textures[4]);
-		glEnable(GL_TEXTURE_2D);
-		glBegin(GL_QUADS);
-		glTexCoord2f(0.0f, 1.0f); glVertex3f(-xLen, yLen, -zLen);
-		glTexCoord2f(0.0f, 0.0f); glVertex3f(-xLen, yLen, zLen);
-		glTexCoord2f(1.0f, 0.0f); glVertex3f(xLen, yLen, zLen);
-		glTexCoord2f(1.0f, 1.0f); glVertex3f(xLen, yLen, -zLen);
-		glEnd();
-		glDisable(GL_TEXTURE_2D);
-
-
-		// Left Face
-		glBindTexture(GL_TEXTURE_2D, textures[5]);
-		glEnable(GL_TEXTURE_2D);
-		glBegin(GL_QUADS);
-		glTexCoord2f(1.0f, 1.0f); glVertex3f(-xLen, -yLen, -zLen);
-		glTexCoord2f(0.0f, 1.0f); glVertex3f(xLen, -yLen, -zLen);
-		glTexCoord2f(0.0f, 0.0f); glVertex3f(xLen, -yLen, zLen);
-		glTexCoord2f(1.0f, 0.0f); glVertex3f(-xLen, -yLen, zLen);
-		glEnd();
-		glDisable(GL_TEXTURE_2D);
-*/
 	}
-	else
-	{
-		glPushMatrix();
-		{
-			glTranslatef(xLen / 2, yLen / 2, zLen / 2);
-			glScalef(xLen, yLen, zLen);
-			glColor3d(1.0, 1.0, 1.0);
-			glutWireCube(1.0);
-			//glutSolidCube(1.0);
-
-		}
-		glPopMatrix();	
-	}
-
+	glPopMatrix();	
 	
 
 	
@@ -353,46 +276,6 @@ void GLWidget::DrawBin()
 void GLWidget::ShowObject(int width, int height, int depth, QStringList imagenamelist)
 {
 	
-	RgbImage theTexMap[6];// = { "./cho1.bmp", "./cho2.bmp", "./cho3.bmp", "./cho4.bmp", "./cho5.bmp", "./cho6.bmp" };
-	int i = 0;
-	foreach(QString item, imagenamelist)
-	{
-		qDebug() << "The QSTRINGLIST IS " << item;
-		theTexMap[i] = item.toStdString().c_str();
-		i++;
-		if (i == 6)break;
-	}
 
-	xLen = width; 
-	yLen = height;
-	zLen = depth;
-
-
-	glClearColor(0.0, 0.0, 0.0, 0.0);
-	glShadeModel(GL_FLAT);
-	glEnable(GL_DEPTH_TEST);
-
-
-	// Pixel alignment: each row is word aligned (aligned to a 4 byte boundary)
-	//    Therefore, no need to call glPixelStore( GL_UNPACK_ALIGNMENT, ... );
-
-	// Typical Texture Generation Using Data From The Bitmap
-	textures = new GLuint[6];
-	glGenTextures(6, textures);
-
-	for (int i = 0; i < 6; i++)
-	{
-		glBindTexture(GL_TEXTURE_2D, textures[i]);
-		glTexImage2D(GL_TEXTURE_2D, 0, 3, theTexMap[i].GetNumCols(), theTexMap[i].GetNumRows(), 0, GL_RGB, GL_UNSIGNED_BYTE, theTexMap[i].ImageData());
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-
-	}
-
-	//hasTexture = true;
-
-	updateGL();
 
 }
