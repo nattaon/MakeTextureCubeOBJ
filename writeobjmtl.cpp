@@ -26,19 +26,32 @@ void WriteOBJMTL::WriteOBJFile(string objname, string mtlname, float w_cm, float
 	h_cm = h_cm * 0.5;
 	d_cm = d_cm * 0.5;
 
-
-	outfile << "#1.front vertex position" << endl;
+	outfile << "#5.top vertex position" << endl;
+	outfile << "v " << -w_cm << " " << h_cm << " " << -d_cm << endl;
+	outfile << "v " << -w_cm << " " << h_cm << " " << d_cm << endl;
+	outfile << "v " << w_cm << " " << h_cm << " " << d_cm << endl;
+	outfile << "v " << w_cm << " " << h_cm << " " << -d_cm << endl;
+	outfile << endl;
+	outfile << "#1.front vertex position : union direction" << endl;
 	outfile << "v " << -w_cm << " " << h_cm << " " << d_cm << endl;
 	outfile << "v " << -w_cm << " " << -h_cm << " " << d_cm << endl;
 	outfile << "v " << w_cm << " " << -h_cm << " " << d_cm << endl;
 	outfile << "v " << w_cm << " " << h_cm << " " << d_cm << endl;
 	outfile << endl;
-	outfile << "#2.back vertex position" << endl;
-	outfile << "v " << w_cm << " " << h_cm << " " << -d_cm << endl;
+
+	outfile << "#6.bottom vertex position" << endl;
+	outfile << "v " << -w_cm << " " << -h_cm << " " << d_cm << endl;
+	outfile << "v " << -w_cm << " " << -h_cm << " " << -d_cm << endl;
 	outfile << "v " << w_cm << " " << -h_cm << " " << -d_cm << endl;
+	outfile << "v " << w_cm << " " << -h_cm << " " << d_cm << endl;
+	outfile << endl;
+	outfile << "#2.back vertex position : intersec direction" << endl;
 	outfile << "v " << -w_cm << " " << -h_cm << " " << -d_cm << endl;
 	outfile << "v " << -w_cm << " " << h_cm << " " << -d_cm << endl;
+	outfile << "v " << w_cm << " " << h_cm << " " << -d_cm << endl;
+	outfile << "v " << w_cm << " " << -h_cm << " " << -d_cm << endl;
 	outfile << endl;
+
 	outfile << "#3.left vertex position" << endl;
 	outfile << "v " << -w_cm << " " << h_cm << " " << -d_cm << endl;
 	outfile << "v " << -w_cm << " " << -h_cm << " " << -d_cm << endl;
@@ -51,62 +64,61 @@ void WriteOBJMTL::WriteOBJFile(string objname, string mtlname, float w_cm, float
 	outfile << "v " << w_cm << " " << -h_cm << " " << -d_cm << endl;
 	outfile << "v " << w_cm << " " << h_cm << " " << -d_cm << endl;
 	outfile << endl;
-	outfile << "#5.top vertex position" << endl;
-	outfile << "v " << -w_cm << " " << h_cm << " " << -d_cm << endl;
-	outfile << "v " << -w_cm << " " << h_cm << " " << d_cm << endl;
-	outfile << "v " << w_cm << " " << h_cm << " " << d_cm << endl;
-	outfile << "v " << w_cm << " " << h_cm << " " << -d_cm << endl;
-	outfile << endl;
-	outfile << "#6.bottom vertex position" << endl;
-	outfile << "v " << -w_cm << " " << -h_cm << " " << d_cm << endl;
-	outfile << "v " << -w_cm << " " << -h_cm << " " << -d_cm << endl;
-	outfile << "v " << w_cm << " " << -h_cm << " " << -d_cm << endl;
-	outfile << "v " << w_cm << " " << -h_cm << " " << d_cm << endl;
-	outfile << endl;
 
-
-	outfile << "#1.front texture position" << endl;
+	outfile << "#1.top texture position" << endl;
 	outfile << "vt " << t1[0].x << " " << t1[0].y << endl;
 	outfile << "vt " << t1[1].x << " " << t1[1].y << endl;
 	outfile << "vt " << t1[2].x << " " << t1[2].y << endl;
 	outfile << "vt " << t1[3].x << " " << t1[3].y << endl;
 	outfile << endl;
-	outfile << "#2.back texture position" << endl;
+	outfile << "#2.front texture position" << endl;
 	outfile << "vt " << t2[0].x << " " << t2[0].y << endl;
 	outfile << "vt " << t2[1].x << " " << t2[1].y << endl;
 	outfile << "vt " << t2[2].x << " " << t2[2].y << endl;
 	outfile << "vt " << t2[3].x << " " << t2[3].y << endl;
 	outfile << endl;
-	outfile << "#3.left texture position" << endl;
+	outfile << "#3.bottom texture position" << endl;
 	outfile << "vt " << t3[0].x << " " << t3[0].y << endl;
 	outfile << "vt " << t3[1].x << " " << t3[1].y << endl;
 	outfile << "vt " << t3[2].x << " " << t3[2].y << endl;
 	outfile << "vt " << t3[3].x << " " << t3[3].y << endl;
 	outfile << endl;
-	outfile << "#4.right texture position" << endl;
+	outfile << "#4.back texture position" << endl;
 	outfile << "vt " << t4[0].x << " " << t4[0].y << endl;
 	outfile << "vt " << t4[1].x << " " << t4[1].y << endl;
 	outfile << "vt " << t4[2].x << " " << t4[2].y << endl;
 	outfile << "vt " << t4[3].x << " " << t4[3].y << endl;
 	outfile << endl;
-	outfile << "#5.top texture position" << endl;
+	outfile << "#5.left texture position" << endl;
 	outfile << "vt " << t5[0].x << " " << t5[0].y << endl;
 	outfile << "vt " << t5[1].x << " " << t5[1].y << endl;
 	outfile << "vt " << t5[2].x << " " << t5[2].y << endl;
 	outfile << "vt " << t5[3].x << " " << t5[3].y << endl;
 	outfile << endl;
-	outfile << "#6.bottom texture position" << endl;
+	outfile << "#6.right texture position" << endl;
 	outfile << "vt " << t6[0].x << " " << t6[0].y << endl;
 	outfile << "vt " << t6[1].x << " " << t6[1].y << endl;
 	outfile << "vt " << t6[2].x << " " << t6[2].y << endl;
 	outfile << "vt " << t6[3].x << " " << t6[3].y << endl;
 	outfile << endl;
 
+	outfile << "#5.top normal " << endl;
+	outfile << "vn 0.0000 1.0000 0.0000" << endl;
+	outfile << "vn 0.0000 1.0000 0.0000" << endl;
+	outfile << "vn 0.0000 1.0000 0.0000" << endl;
+	outfile << "vn 0.0000 1.0000 0.0000" << endl;
+	outfile << endl;
 	outfile << "#1.front normal " << endl;
 	outfile << "vn 0.0000 0.0000 1.0000" << endl;
 	outfile << "vn 0.0000 0.0000 1.0000" << endl;
 	outfile << "vn 0.0000 0.0000 1.0000" << endl;
 	outfile << "vn 0.0000 0.0000 1.0000" << endl;
+	outfile << endl;
+	outfile << "#6.bottom normal " << endl;
+	outfile << "vn 0.0000 -1.0000 0.0000" << endl;
+	outfile << "vn 0.0000 -1.0000 0.0000" << endl;
+	outfile << "vn 0.0000 -1.0000 0.0000" << endl;
+	outfile << "vn 0.0000 -1.0000 0.0000" << endl;
 	outfile << endl;
 	outfile << "#2.back normal " << endl;
 	outfile << "vn 0.0000 0.0000 -1.0000" << endl;
@@ -126,18 +138,8 @@ void WriteOBJMTL::WriteOBJFile(string objname, string mtlname, float w_cm, float
 	outfile << "vn 1.0000 0.0000 0.0000" << endl;
 	outfile << "vn 1.0000 0.0000 0.0000" << endl;
 	outfile << endl;
-	outfile << "#5.top normal " << endl;
-	outfile << "vn 0.0000 1.0000 0.0000" << endl;
-	outfile << "vn 0.0000 1.0000 0.0000" << endl;
-	outfile << "vn 0.0000 1.0000 0.0000" << endl;
-	outfile << "vn 0.0000 1.0000 0.0000" << endl;
-	outfile << endl;
-	outfile << "#6.bottom normal " << endl;
-	outfile << "vn 0.0000 -1.0000 0.0000" << endl;
-	outfile << "vn 0.0000 -1.0000 0.0000" << endl;
-	outfile << "vn 0.0000 -1.0000 0.0000" << endl;
-	outfile << "vn 0.0000 -1.0000 0.0000" << endl;
-	outfile << endl;
+
+
 
 	outfile << "usemtl Material" << endl;
 	outfile << "s off" << endl;

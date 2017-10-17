@@ -111,8 +111,20 @@ void MainWindow::ButtonOpenSourceImagePressed()
 void MainWindow::ButtonOpenTargetImagePressed()
 {
 
-	QString filename = GetOpenImageFilename();
-	if (filename.trimmed().isEmpty()) return;
+	QString filename = ui->in_src_open->text();
+
+	QFileInfo check_file(filename);
+	if (check_file.exists() && check_file.isFile())
+	{
+		//qDebug() << "check_file.exists()";
+
+	}
+	else
+	{
+		filename = GetOpenImageFilename();
+		if (filename.trimmed().isEmpty()) return;
+
+	}
 
 	target_img = imread(filename.toStdString(), CV_LOAD_IMAGE_COLOR);
 	imshow("Target Image", target_img);
@@ -130,6 +142,9 @@ void MainWindow::ButtonRotCCWPressed()
 	finalM.copyTo(target_img);
 	imshow("Target Image", target_img);
 
+	transposM.release();
+	flipM.release();
+	finalM.release();
 }
 void MainWindow::ButtonRotCWPressed()
 {
@@ -142,24 +157,32 @@ void MainWindow::ButtonRotCWPressed()
 	finalM.copyTo(target_img);
 	imshow("Target Image", target_img);
 
+	transposM.release();
+	flipM.release();
+	finalM.release();
+
 }
 
 void MainWindow::ButtonFlipVerticalPressed()
 {
 	Mat flipM;
-	flip(target_img, flipM, 0);
+	flip(target_img, flipM, 0);//y
 
 	flipM.copyTo(target_img);
 	imshow("Target Image", target_img);
+
+	flipM.release();
 }
 
 void MainWindow::ButtonFlipHorizontalPressed()
 {
 	Mat flipM;
-	flip(target_img, flipM, 1);
+	flip(target_img, flipM, 1);//x
 
 	flipM.copyTo(target_img);
 	imshow("Target Image", target_img);
+
+	flipM.release();
 }
 
 void MainWindow::ButtonNewImagePressed()
@@ -407,66 +430,10 @@ void MainWindow::PressedCombineTexturePNG()
 	t6_pos.clear();
 
 
-	roi_x1 = 0;
+
+	//1.top image
+	roi_x1 = texture3_left.cols;
 	roi_y1 = 0;
-	roi_w = texture1_front.cols;
-	roi_h = texture1_front.rows;
-	roi_x2 = roi_x1 + roi_w;
-	roi_y2 = roi_y1 + roi_h;
-	texture_imgroi = Mat(texture_img, Rect(roi_x1, roi_y1, roi_w, roi_h));
-	texture1_front.copyTo(texture_imgroi);
-	//texture_imgroi.release();
-	t1_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y1 / tex_h));
-	t1_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y2 / tex_h));
-	t1_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y2 / tex_h));
-	t1_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y1 / tex_h));
-
-	//cout << t1_pos;
-
-	roi_x1 = 0;
-	roi_y1 = texture1_front.rows;
-	roi_w = texture2_back.cols;
-	roi_h = texture2_back.rows;
-	roi_x2 = roi_x1 + roi_w;
-	roi_y2 = roi_y1 + roi_h;
-	texture_imgroi = Mat(texture_img, Rect(roi_x1, roi_y1, roi_w, roi_h));
-	texture2_back.copyTo(texture_imgroi);
-	//texture_imgroi.release();
-	t2_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y1 / tex_h));
-	t2_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y2 / tex_h));
-	t2_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y2 / tex_h));
-	t2_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y1 / tex_h));
-
-	roi_x1 = texture1_front.cols;
-	roi_y1 = 0;
-	roi_w = texture3_left.cols;
-	roi_h = texture3_left.rows;
-	roi_x2 = roi_x1 + roi_w;
-	roi_y2 = roi_y1 + roi_h;
-	texture_imgroi = Mat(texture_img, Rect(roi_x1, roi_y1, roi_w, roi_h));
-	texture3_left.copyTo(texture_imgroi);
-	//texture_imgroi.release();
-	t3_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y1 / tex_h));
-	t3_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y2 / tex_h));
-	t3_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y2 / tex_h));
-	t3_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y1 / tex_h));
-
-	roi_x1 = texture1_front.cols;
-	roi_y1 = texture1_front.rows;
-	roi_w = texture4_right.cols;
-	roi_h = texture4_right.rows;
-	roi_x2 = roi_x1 + roi_w;
-	roi_y2 = roi_y1 + roi_h;
-	texture_imgroi = Mat(texture_img, Rect(roi_x1, roi_y1, roi_w, roi_h));
-	texture4_right.copyTo(texture_imgroi);
-	//texture_imgroi.release();
-	t4_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y1 / tex_h));
-	t4_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y2 / tex_h));
-	t4_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y2 / tex_h));
-	t4_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y1 / tex_h));
-
-	roi_x1 = 0;
-	roi_y1 = texture1_front.rows + texture2_back.rows;
 	roi_w = texture5_top.cols;
 	roi_h = texture5_top.rows;
 	roi_x2 = roi_x1 + roi_w;
@@ -474,13 +441,31 @@ void MainWindow::PressedCombineTexturePNG()
 	texture_imgroi = Mat(texture_img, Rect(roi_x1, roi_y1, roi_w, roi_h));
 	texture5_top.copyTo(texture_imgroi);
 	//texture_imgroi.release();
-	t5_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y1 / tex_h));
-	t5_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y2 / tex_h));
-	t5_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y2 / tex_h));
-	t5_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y1 / tex_h));
+	t1_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y1 / tex_h));//0-1 start from left-bottom
+	t1_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y2 / tex_h));//draw u direction
+	t1_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y2 / tex_h));
+	t1_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y1 / tex_h));
 
-	roi_x1 = 0;
-	roi_y1 = texture1_front.rows + texture2_back.rows + texture5_top.rows;
+	//cout << t1_pos;
+
+	//2.front image
+	roi_x1 = texture3_left.cols;
+	roi_y1 = texture5_top.rows;
+	roi_w = texture1_front.cols;
+	roi_h = texture1_front.rows;
+	roi_x2 = roi_x1 + roi_w;
+	roi_y2 = roi_y1 + roi_h;
+	texture_imgroi = Mat(texture_img, Rect(roi_x1, roi_y1, roi_w, roi_h));
+	texture1_front.copyTo(texture_imgroi);
+	//texture_imgroi.release();
+	t2_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y1 / tex_h));//draw u direction
+	t2_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y2 / tex_h));
+	t2_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y2 / tex_h));
+	t2_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y1 / tex_h));
+
+	//3.bottom image
+	roi_x1 = texture3_left.cols;
+	roi_y1 = texture5_top.rows + texture1_front.rows;
 	roi_w = texture6_bottom.cols;
 	roi_h = texture6_bottom.rows;
 	roi_x2 = roi_x1 + roi_w;
@@ -488,10 +473,60 @@ void MainWindow::PressedCombineTexturePNG()
 	texture_imgroi = Mat(texture_img, Rect(roi_x1, roi_y1, roi_w, roi_h));
 	texture6_bottom.copyTo(texture_imgroi);
 	//texture_imgroi.release();
+	t3_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y1 / tex_h));
+	t3_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y2 / tex_h));
+	t3_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y2 / tex_h));
+	t3_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y1 / tex_h));
+
+
+
+	//4.back image
+	roi_x1 = texture3_left.cols;
+	roi_y1 = texture5_top.rows + texture1_front.rows + texture6_bottom.rows;
+	roi_w = texture2_back.cols;
+	roi_h = texture2_back.rows;
+	roi_x2 = roi_x1 + roi_w;
+	roi_y2 = roi_y1 + roi_h;
+	texture_imgroi = Mat(texture_img, Rect(roi_x1, roi_y1, roi_w, roi_h));
+	texture2_back.copyTo(texture_imgroi);
+	//texture_imgroi.release();
+	t4_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y1 / tex_h));//draw u direction
+	t4_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y2 / tex_h));
+	t4_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y2 / tex_h));
+	t4_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y1 / tex_h));
+
+
+	//5.left image
+	roi_x1 = 0;
+	roi_y1 = texture5_top.rows;
+	roi_w = texture3_left.cols;
+	roi_h = texture3_left.rows;
+	roi_x2 = roi_x1 + roi_w;
+	roi_y2 = roi_y1 + roi_h;
+	texture_imgroi = Mat(texture_img, Rect(roi_x1, roi_y1, roi_w, roi_h));
+	texture3_left.copyTo(texture_imgroi);
+	//texture_imgroi.release();
+	t5_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y1 / tex_h));//draw u direction
+	t5_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y2 / tex_h));
+	t5_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y2 / tex_h));
+	t5_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y1 / tex_h));
+
+
+	//6.right image
+	roi_x1 = texture3_left.cols + texture1_front.cols;
+	roi_y1 = texture5_top.rows;
+	roi_w = texture4_right.cols;
+	roi_h = texture4_right.rows;
+	roi_x2 = roi_x1 + roi_w;
+	roi_y2 = roi_y1 + roi_h;
+	texture_imgroi = Mat(texture_img, Rect(roi_x1, roi_y1, roi_w, roi_h));
+	texture4_right.copyTo(texture_imgroi);
+	//texture_imgroi.release();
+	
 	t6_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y1 / tex_h));
 	t6_pos.push_back(Point2f((float)roi_x1 / tex_w, 1.0 - (float)roi_y2 / tex_h));
 	t6_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y2 / tex_h));
-	t6_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y1 / tex_h));
+	t6_pos.push_back(Point2f((float)roi_x2 / tex_w, 1.0 - (float)roi_y1 / tex_h));//draw u direction
 
 	imshow("texture_img", texture_img);
 
@@ -502,6 +537,8 @@ void MainWindow::PressedCombineTexturePNG()
 
 	texture_img = Mat();
 	//destroyWindow("Target Image");
+	texture_img.release();
+	texture_imgroi.release();
 
 
 }
